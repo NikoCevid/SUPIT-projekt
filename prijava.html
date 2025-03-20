@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="prijava.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/png" href="Algebra Favicon.ico" />
+    <title>Sveučilište Algebra</title>
+  </head>
+  <body>
+    <header></header>
+    <!-- iframe dynamically for contact.html -->
+    <section id="section-form">
+      <form id="form">
+        <legend>PRIJAVA KORISNIKA</legend>
+        <div class="form-parameters">
+          <label for="username">Korisničko ime</label>
+          <input
+            type="email"
+            id="username"
+            name="username"
+            placeholder="Unesite korisničko ime"
+            required
+          />
+        </div>
+        <div class="form-parameters">
+          <label for="password">Lozinka</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Lozinka"
+            required
+          />
+        </div>
+        <button type="submit">Prijavi se</button>
+
+        <div class="register-link">
+          Nemaš račun? <a href="#">Registriraj se</a>
+        </div>
+      </form>
+    </section>
+
+    <footer></footer>
+
+    <script src="Global.js"></script>
+    <script src="prijava.js"></script>
+  </body>
+</html>

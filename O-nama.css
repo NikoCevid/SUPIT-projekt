@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  color: #333;
+}
+
+/* SLIKA IZ ZRAKA */
+
+.first-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+.first-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* O NAMA */
+.values-section {
+  text-align: center;
+}
+
+.values-section h2 {
+  margin-top: 20px;
+}
+
+.separator {
+  width: 1000px;
+  height: 3px;
+  background-color: #f7a707;
+  border: none;
+  margin: 20px auto;
+}
+
+/* NASLOVI CRVENE BOJE */
+.section-title {
+  font-size: 24px;
+  color: #eb0f0f;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.section-title .icon {
+  font-size: 20px;
+}
+
+/* TEKST ISPOD NASE VRIJEDNOSTI */
+
+.bottom-text {
+  font-family: "Arial Narrow", Arial, sans-serif, cursive;
+  line-height: 30px;
+  font-size: 20px;
+  max-width: 900px;
+  margin-top: 50px;
+  margin: 0 auto;
+}
+.background-color {
+  padding: 50px;
+  background-color: #f7f7f7;
+  font-style: italic;
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  color: #b22222; /* Dark red color */
+  font-size: 28px;
+  margin: 40px 0 20px;
+}
+
+/* TEKST O NAMA */
+.intro-text {
+  background-color: #f7f7f7; /* Light gray background */
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: start;
+  border-radius: 8px;
+}
+
+/* BOXES  */
+.value-boxes {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: 40px auto;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.value-box {
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.value-box h2 {
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd; /* Underline effect */
+  padding-bottom: 10px;
+}
+
+.value-box p {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* ISPOD POVIJESTI */
+
+.containers {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 40px auto;
+}
+
+.container {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.container #line {
+  padding: 0 10px;
+}
+
+.container .year {
+  color: #007bff;
+}
+
+.container h2 {
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd; /* Underline effect */
+  padding-bottom: 10px;
+}
+
+.container p {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.icon-group {
+  height: 50px;
+  color: #b22222;
+}
+
+/* ISPOD ALGEBRA GRUPA */
+
+.algebra-big-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.algebra-box {
+  width: 250px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.algebra-box h2 {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.algebra-box img {
+  width: 150px;
+  margin-top: 20px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.gray-line-algebra {
+  height: 2px;
+  width: 200px;
+  background-color: #ebe8e8;
+}
+
+/*KARTA*/
+
+.map-box-container {
+  display: flex;
+  flex-wrap: wrap; /*new row*/
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  /*Backround image map for section*/
+
+  background-image: url(projekt.img/kakoDoNas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.map-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b8b6b6;
+  border-radius: 4px;
+  padding: 20px;
+  max-width: 500px;
+  height: 450px;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+.map-iframe iframe {
+  width: calc(2 * 500px + 20px);
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.map-mini-box > p {
+  padding: 0 10px;
+  margin-bottom: 50px;
+  color: #1a1818;
+}
+
+.map-mini-box > h3 {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  color: #1a1818;
+}
+
+/* Responzivni dizajn za mobilne uređaje */
+@media (max-width: 768px) {
+  /* SLIKA IZ ZRAKA */
+  .first-section {
+    height: 250px; /* Manja visina slike na mobilnim uređajima */
+  }
+
+  .first-section img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  /* O NAMA */
+  .values-section h2 {
+    font-size: 22px; /* Manji font za naslove */
+  }
+
+  .separator {
+    width: 80%; /* Manja širina separatora */
+  }
+
+  .bottom-text {
+    font-size: 18px; /* Manji font za tekst */
+    line-height: 28px;
+    margin-top: 30px;
+    max-width: 90%;
+  }
+
+  .background-color {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 24px; /* Manji font za naslove */
+    margin: 20px 0;
+  }
+
+  .intro-text {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  /* BOXES */
+  .value-boxes {
+    flex-direction: column; /* Stavljanje boxeva u kolonu */
+    padding: 10px;
+  }
+
+  .value-box {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .value-box h2 {
+    font-size: 20px;
+  }
+
+  .value-box p {
+    font-size: 16px;
+  }
+
+  /* ISPOD POVIJESTI */
+  .containers {
+    flex-direction: column; /* Stavljanje kontejnera u kolonu */
+    width: 95%;
+  }
+
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container h2 {
+    font-size: 20px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .icon-group {
+    display: none; /* Skriva ikone na mobilnim uređajima */
+  }
+
+  /* ISPOD ALGEBRA GRUPA */
+  .algebra-big-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .algebra-box {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .algebra-box h2 {
+    font-size: 16px;
+  }
+
+  .algebra-box img {
+    width: 120px;
+    height: 80px;
+  }
+
+  /* KARTA */
+  .map-box-container {
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .map-box {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .map-iframe iframe {
+    width: 100%;
+    height: 250px; /* Manja visina iframe za mobilne uređaje */
+  }
+
+  .map-mini-box p {
+    font-size: 14px;
+  }
+
+  .map-mini-box h3 {
+    font-size: 18px;
+  }
+}

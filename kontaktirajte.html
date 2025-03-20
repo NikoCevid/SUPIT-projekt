@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kontaktirajte.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/png" href="Algebra Favicon.ico" />
+    <title>Sveučilište Algebra</title>
+  </head>
+  <body>
+    <div class="contact">
+      <div class="contact-header">
+        <legend>Kontaktirajte nas</legend>
+      </div>
+      <div class="gray-line"></div>
+
+      <form
+        id="contact-form"
+        action="https://www.fulek.com/mvc/supit/project-contact-form"
+        method="post"
+        target="_top"
+      >
+        <div class="contact-parameters">
+          <label for="FullName">Puno ime</label>
+          <input
+            type="text"
+            id="FullName"
+            name="FullName"
+            placeholder="Ime i prezime"
+            required
+          />
+        </div>
+
+        <div class="contact-parameters">
+          <label for="Email">E-mail</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="Unesite email"
+            required
+          />
+        </div>
+
+        <div class="contact-parameters">
+          <label for="Importance">Važnost poruke</label>
+          <select id="Importance" name="Importance">
+            <option value="low">Niska</option>
+            <option value="medium">Srednja</option>
+            <option value="high">Visoka</option>
+          </select>
+        </div>
+        <div class="contact-parameters">
+          <label for="Message">Poruka</label>
+          <textarea
+            id="Message"
+            name="Message"
+            placeholder="Unesite vašu poruku"
+            required
+          ></textarea>
+        </div>
+        <div class="checkbox-button">
+          <label>
+            Želim primati obavijesti
+            <input
+              type="checkbox"
+              name="ReceiveNewsletter"
+              id="ReceiveNewsletter"
+            />
+          </label>
+          <div class="buttons">
+            <button type="submit" class="button" id="submit-button">
+              Pošalji
+            </button>
+            <button type="reset" class="button" id="cancel-button">
+              Odustani
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="kontaktirajte.js"></script>
+    <script src="Global.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="NastavniPlan.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" type="image/png" href="Algebra Favicon.ico" />
+    <title>Sveučilište Algebra</title>
+  </head>
+  <body>
+    <header></header>
+    <!-- iframe dynamically for contact.html -->
+    <main id="main-content">
+      <section id="curriculum-section">
+        <div class="about-us">
+          <h2>Nastavni plan</h2>
+          <div class="yellow-line"></div>
+        </div>
+
+        <div id="flex-container">
+          <form action="" method="get" id="search-form">
+            <div class="search-parameters">
+              <label id="curriculum-label">Naziv kolegija:</label>
+              <input
+                type="text"
+                name="query"
+                placeholder="Search"
+                id="search-input"
+                autocomplete="off"
+                list="subject"
+              />
+              <datalist id="subject">
+                <!-- Options will be dynamically populated -->
+              </datalist>
+            </div>
+          </form>
+          <div id="table-container">
+            <table id="selected-curriculum-table">
+              <thead>
+                <tr>
+                  <th>Kolegij</th>
+                  <th>ECTS</th>
+                  <th>Sati</th>
+                  <th>Predavanja</th>
+                  <th>Vježbe</th>
+                  <th>Tip</th>
+                  <th>Akcija</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <!-- This will contain the totals row -->
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="NastavniPlan.js"></script>
+    <script src="Global.js"></script>
+  </body>
+</html>

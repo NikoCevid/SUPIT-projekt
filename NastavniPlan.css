@@ -1,0 +1,190 @@
+#search-form {
+  margin: 80px auto;
+  width: 100%;
+  max-width: 600px;
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+.about-us {
+  margin-top: 80px;
+}
+
+#flex-container {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  padding: 0 15px;
+}
+
+/*bold labels*/
+#search-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.search-parameters {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-parameters input {
+  padding: 10px;
+}
+
+/* Table for selected subjects */
+#selected-curriculum-table {
+  display: none;
+  width: 100%;
+  margin: 50px auto; /* Reduced space between the table and the top */
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Reduce padding in table rows */
+#selected-curriculum-table th,
+#selected-curriculum-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#selected-curriculum-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+#selected-curriculum-table td {
+  background-color: #fff;
+}
+
+tfoot {
+  display: none;
+}
+/* Modify the "Total info" section */
+#total-info {
+  display: none;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#total-info p {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+/* Delete button */
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* If there are no rows, hide the header */
+#selected-curriculum-table th {
+  display: none; /* Hide header when table is empty */
+}
+
+/* Show header when there are items in the table */
+#selected-curriculum-table tr:not(:empty) th {
+  display: table-cell; /* Make header visible when there's at least one row */
+}
+
+#table-container {
+  width: 100%;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+#main-content {
+  min-height: 80vh;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .yellow-line {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .about-us {
+    margin-top: 110px;
+  }
+
+  .about-us h2 {
+    font-size: 20px;
+  }
+
+  #search-form {
+    margin-top: 20px;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding/borders are included in width */
+  }
+
+  /* Flex container should stack elements vertically */
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Prevent content from overflowing */
+  }
+
+  #table-container {
+    width: 100%;
+    overflow: auto;
+    align-items: center;
+  }
+
+  /* Adjust the table to be full width and stack under the form */
+  #selected-curriculum-table {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: none;
+    box-sizing: border-box; /* Prevent content from overflowing */
+    overflow-x: auto;
+  }
+
+  /* Adjust table padding for small screens */
+  #selected-curriculum-table th,
+  #selected-curriculum-table td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  /* Show the table header when there are rows */
+  #selected-curriculum-table tr:not(:empty) th {
+    display: table-cell;
+  }
+
+  /* Adjust the search parameters for small screens */
+  .search-parameters {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-parameters input {
+    padding: 8px;
+  }
+
+  /* Adjust the delete button size */
+  .delete-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

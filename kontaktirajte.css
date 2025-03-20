@@ -1,0 +1,116 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  overflow-y: auto;
+  min-height: 670px;
+  padding: 0 20px;
+}
+.contact-header {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-header img {
+  height: 35px;
+}
+
+.contact-header legend {
+  font-size: 35px;
+  margin: 0;
+}
+
+.gray-line {
+  height: 2px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #ebe8e8;
+  margin-top: 20px;
+}
+/*set width and padding of form*/
+
+#contact-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+/*bold labels*/
+#contact-form label {
+  font-weight: bold;
+}
+
+.contact-parameters {
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-parameters input {
+  padding: 10px;
+}
+
+.contact-parameters #Importance {
+  padding: 10px;
+}
+
+.contact-parameters #Message {
+  padding: 50px;
+}
+
+/*check box, 2 buttons*/
+
+.checkbox-button #ReceiveNewsletter {
+  margin: 20px 5px;
+  vertical-align: middle;
+}
+
+.checkbox-button .buttons {
+  display: flex;
+  gap: 10px;
+}
+.checkbox-button .button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+.checkbox-button .button:first-child {
+  background-color: #03b1fc;
+}
+
+.checkbox-button .button:last-child {
+  background-color: #ed070f;
+}
+
+@media (max-width: 768px) {
+  .contact-header legend {
+    font-size: 28px;
+  }
+
+  .contact-header img {
+    height: 30px;
+  }
+
+  .contact-parameters {
+    gap: 15px;
+  }
+
+  .contact-parameters input,
+  .contact-parameters #Importance,
+  .contact-parameters #Message {
+    padding: 10px;
+  }
+
+  .checkbox-button .buttons {
+    gap: 8px;
+  }
+
+  .checkbox-button .button {
+    padding: 8px;
+  }
+}

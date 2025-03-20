@@ -1,0 +1,52 @@
+#section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 670px;
+}
+#form {
+  width: 300px;
+  padding: 20px;
+}
+#form legend {
+  margin-bottom: 20px;
+}
+
+.form-parameters {
+  margin-top: 5px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-parameters input {
+  padding: 10px;
+}
+
+#section-form input,
+button {
+  border-radius: 5px;
+}
+
+#form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #28292b;
+  color: #ffffff;
+}
+
+.register-link {
+  margin-top: 20px;
+}
+
+.register-link a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-of-page {
+  padding: 40px 0;
+  min-height: 150px;
+}
